@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscription</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inscription</h1>
+    <form action="register.php" method="post">
+      <label for="username">Nom d'utilisateur:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="id">Identifiant:</label>
+      <input type="text" id="id" name="id" required>
+      <label for="password">Mot de passe:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="role">Rôle:</label>
+      <select id="role" name="role" required>
+        <option value="admin">Administrateur</option>
+        <option value="patient">Patient</option>
+      </select>
+      <input type="submit" value="S'inscrire">
+    </form>
+    <!-- <p>Vous avez déjà un compte ? <a href="login.php">Se connecter</a> -->
+        <div class="container">
+            <h1>Connexion</h1>
+            <form action="login.php" method="post">
+              <label for="username">Nom d'utilisateur:</label>
+              <input type="text" id="username" name="username" required>
+              <label for="password">Mot de passe:</label>
+              <input type="password" id="password" name="password" required>
+              <label for="role">Rôle:</label>
+              <select id="role" name="role" required>
+                <option value="admin">Administrateur</option>
+                <option value="patient">Patient</option>
+              </select>
+               <input type="submit" value="Se connecter"> 
+            </form>
+    </p>
+  </div>
+</body>
+</html>
